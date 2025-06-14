@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: meu-projeto
+
+  cloud:
+    config:
+      enabled: false  # Desativa tentativa de conexão com Config Server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
